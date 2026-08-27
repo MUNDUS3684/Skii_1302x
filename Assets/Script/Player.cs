@@ -19,13 +19,14 @@ public class Player : MonoBehaviour
     [SerializeField]
     private int hp;
     public int HP { get { return hp; } set { hp = value; } }
-
     void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
         moveAction.Enable();
 
         rb = GetComponent<Rigidbody>();
+
+        UIManager.instance.UpdatePoint(Point);
     }
 
     void FixedUpdate()
