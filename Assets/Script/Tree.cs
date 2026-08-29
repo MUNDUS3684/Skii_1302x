@@ -61,6 +61,6 @@ public class Tree : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        rd.material.color = new Color32(109, 58, 22, 255);
+        rd.material.color = new Color32(2, 195, 0, 255);
     }
 }
